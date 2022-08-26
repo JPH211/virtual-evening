@@ -1,3 +1,5 @@
+const button = document.querySelector('button');
+
 //create a function that returns the number of true values in an array
 function countTrue(myArray) {
     let count = 0;
@@ -14,3 +16,4 @@ function countTrue(myArray) {
 const testArr = [true, false, true, true];
 
 console.log(countTrue([]));
+button.innerText = countTrue(testArr);
