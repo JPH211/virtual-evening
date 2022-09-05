@@ -1,18 +1,17 @@
 //reversible inclusive list
-
-function reversibleInclusiveList(start, end){
+function reversibleInclusiveList(a, b){
     const outputArray = [];
-    if(start < end){
-        for(i = start; i <=end; i++){
+    if(a < b){
+        for(i = a; i <=b; i++){
             outputArray.push(i);
         }
     }else{
-        for(i = end; i>=start; i--){
+        for(i = a; i>=b; i--){
             outputArray.push(i)
         }
     }
     console.log(outputArray);
 }
 
-reversibleInclusiveList(5,10);
+reversibleInclusiveList(2,8);
 reversibleInclusiveList(24,17);
