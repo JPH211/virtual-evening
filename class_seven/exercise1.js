@@ -11,5 +11,6 @@ function redundantReturn(str){
     }
     return returnFunc()
 }
-
-console.log(redundantReturn('a'))
+console.groupCollapsed("Ex 1")
+console.log(redundantReturn('I was returned redundantly'))
+console.groupEnd();
