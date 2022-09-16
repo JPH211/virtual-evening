@@ -6,12 +6,14 @@ where each element represents a key-value pair in the form of an array.
 function toArray(obj) {
     const outputArr = [];
     for (const key in obj) {
-        let tempArr = [];
+        let tempArr=[];
         tempArr.push(key, obj[key])
         outputArr.push(tempArr)
     }  
     return outputArr; 
 }
+
+
 console.groupCollapsed("Ex 5")
 console.log(toArray({ a: 1, b: 2 }));
 console.log(toArray({ shrimp: 15, tots: 12 }))
